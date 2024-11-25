@@ -1,7 +1,7 @@
-name,animal_pref,colour_pref
-Ivo,cat,Orange
-Jemma,cat,Green
-Maria,cat,Black
-Kayleigh,cat,Green
-Silja,cat,Pink
-Emily,dog,Purple
+name,animal_pref,colour_pref,food_pref
+Ivo,cat,Orange,pasta
+Jemma,cat,Green,bread
+Maria,cat,Black,sushi
+Kayleigh,cat,Green,sushi
+Silja,cat,Pink,sushi
+Emily,dog,Purple,lasagne
