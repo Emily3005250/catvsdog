@@ -1,7 +1,7 @@
-name,animal_pref
-Ivo,cat
-Jemma,cat
-Maria,cat
-Kayleigh,cat
-Silja,cat
-Emily,dog
+name,animal_pref,colour_pref
+Ivo,cat,Orange
+Jemma,cat,Green
+Maria,cat,Black
+Kayleigh,cat,Green
+Silja,cat,Pink
+Emily,dog,Purple
