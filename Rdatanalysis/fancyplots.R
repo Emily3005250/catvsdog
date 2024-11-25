@@ -4,6 +4,9 @@ pacman::p_load(tidyverse, # data manipulation
                viridis,
                leaflet,
                svglite)
+#check figure folder
+if(!dir.exists("figs")){dir.create("figs")}
+
 #' Import data
 df <- read_csv("data/preferences.csv")
 
@@ -18,6 +21,8 @@ p <- ggplot(data = ap, aes(x = animal_pref, y = n)) +
   geom_bar(stat="identity")
 p
 
+ggsave("figs/preferedanimals.svg", p, device = "svg")
+
 # Group and count colour choices 
 colp <- df %>% 
   mutate_at(vars(colour_pref), factor) %>%
@@ -29,7 +34,9 @@ p <- ggplot(data = colp, aes(x = colour_pref, y = n)) +
   geom_bar(stat="identity")
 p
 
-# Group and count colour choices 
+ggsave("figs/preferedcolour.svg", p, device = "svg")
+
+# Group and count food choices 
 fp <- df %>% 
   mutate_at(vars(food_pref), factor) %>%
   group_by(food_pref) %>%
@@ -40,7 +47,9 @@ p <- ggplot(data = fp, aes(x = food_pref, y = n)) +
   geom_bar(stat="identity")
 p
 
-# Group and count colour choices 
+ggsave("figs/preferedfood.svg", p, device = "svg")
+
+# Group and count season choices 
 sp <- df %>% 
   mutate_at(vars(season_pref), factor) %>%
   group_by(season_pref) %>%
@@ -51,7 +60,9 @@ p <- ggplot(data = sp, aes(x = season_pref, y = n)) +
   geom_bar(stat="identity")
 p
 
-# Group and count colour choices 
+ggsave("figs/preferedseason.svg", p, device = "svg")
+
+# Group and count exercise choices 
 ep <- df %>% 
   mutate_at(vars(exercise_pref), factor) %>%
   group_by(exercise_pref) %>%
@@ -61,3 +72,5 @@ ep <- df %>%
 p <- ggplot(data = ep, aes(x = exercise_pref, y = n)) +
   geom_bar(stat="identity")
 p
+
+ggsave("figs/preferedexercise.svg", p, device = "svg")
