@@ -1,7 +1,7 @@
-name,animal_pref,colour_pref,food_pref,season_pref
-Ivo,cat,Orange,pasta,spring
-Jemma,cat,Green,bread,autumn
-Maria,cat,Black,sushi,winter
-Kayleigh,cat,Green,sushi,spring
-Silja,cat,Pink,sushi,spring
-Emily,dog,Purple,lasagne,srping
+name,animal_pref,colour_pref,food_pref,season_pref,exercise_pref
+Ivo,cat,Orange,pasta,spring,swimming
+Jemma,cat,Green,bread,autumn,hiking
+Maria,cat,Black,sushi,winter,hiking
+Kayleigh,cat,Green,sushi,spring,horseriding
+Silja,cat,Pink,sushi,spring,weightlifting
+Emily,dog,Purple,lasagne,srping,cycling
